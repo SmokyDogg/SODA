@@ -1,0 +1,20 @@
+.fresh {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: $lime;
+
+  &__text {
+    margin: 0;
+    padding: 20px 0;
+    @include fw700;
+    color: $green;
+    font-size: 30px;
+    line-height: 1.2;
+    text-overflow: clip;
+    white-space: pre;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

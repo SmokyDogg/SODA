@@ -1,0 +1,18 @@
+.button {
+  @include fw500;
+  background-color: $yellow;
+  width: 163px;
+  height: 55px;
+  font-size: 18px;
+  line-height: 1.7;
+  border: none;
+  color: $blue;
+  transition: all ease 0.05s;
+
+  &:hover {
+    border: 2px solid #1e3264;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

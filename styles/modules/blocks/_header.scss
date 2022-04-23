@@ -1,3 +1,70 @@
 .header {
-  background-color: $purple;
+  margin: 0;
+  padding: 0;
+  background-color: $lilac;
+  position: relative;
+  overflow: hidden;
+  min-height: 760px;
+  display: flex;
+  box-sizing: border-box;
+
+  &__title {
+    @include fw700;
+    margin: 0;
+    padding: 40px 0 0 50px;
+    font-size: 30px;
+    line-height: 1;
+    color: $yellow;
+  }
+  &__logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 405px;
+    height: 405px;
+    background: url(../../../images/Bg-C.png) no-repeat center;
+    z-index: 0;
+  }
+  &__logo-in-logo {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 169px;
+    height: 169px;
+    background: url(../../../images/logo.png) no-repeat center;
+  }
+  &__container-one {
+    display: flex;
+    flex-direction: column;
+  }
+  &__container-two {
+    margin: 0 0 0 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__image {
+    position: relative;
+    margin: 40px 0 0 50px;
+    width: 783px;
+    height: 600px;
+    background: url(../../../images/jarritos.png) no-repeat center;
+  }
+  &__pineapple {
+    position: absolute;
+    bottom: -36px;
+    right: -52px;
+    width: 129px;
+    height: 124px;
+    background: url(../../../images/ananas.png) no-repeat center;
+    background-size: contain;
+  }
+  &__subtitle {
+    width: 457px;
+    margin: 388px 0 171px 0;
+    @include fw600;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.2;
+    z-index: 1;
+  }
 }
