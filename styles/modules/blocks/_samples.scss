@@ -1,0 +1,30 @@
+.samples {
+  background-color: $lime;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 60px 50px 60px 150px;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  &__textual {
+    align-self: center;
+  }
+
+  &__title {
+    @include fw500;
+    font-size: 60px;
+    line-height: 1.08;
+    color: $blue;
+    margin: 0 0 48px 0;
+  }
+
+  &__text {
+    @include fw400;
+    font-size: 20px;
+    line-height: 1.45;
+    color: $blue;
+    margin: 0;
+    width: 457px;
+  }
+}

@@ -1,8 +1,10 @@
 .fresh {
   margin: 0;
   padding: 0;
-  width: 100%;
   background-color: $lime;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 
   &__text {
     margin: 0;
@@ -12,9 +14,21 @@
     font-size: 30px;
     line-height: 1.2;
     text-overflow: clip;
-    white-space: pre;
-    overflow: hidden;
-    text-align: center;
+    white-space: nowrap;
     text-transform: uppercase;
+    animation: marquee 16s infinite linear;
+
+    &::after{
+      content: "Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh";
+    }
+  }
+}
+
+@keyframes marquee{
+  0% {
+      transform: translateX(-100%)
+  }
+  100% {
+      transform: translateX(50%)
   }
 }

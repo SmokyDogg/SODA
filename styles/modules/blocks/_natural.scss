@@ -1,0 +1,31 @@
+.natural {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  &__title {
+    font-size: 60px;
+    line-height: 1.11;
+    width: 460px;
+    align-self: center;
+  }
+
+  &__image {
+    position: relative;
+    width: 430px;
+    height: 510px;
+    background: url(../../../images/jaritos-mango.png);
+    z-index: 1;
+  }
+
+  &__mango {
+    position: absolute;
+    top: 51px;
+    left: -105px;
+    width: 172px;
+    height: 172px;
+    background: url(../../../images/mango.png) no-repeat center;
+    overflow: hidden;
+    z-index: 0;
+  }
+}
