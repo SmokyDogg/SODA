@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Вкусные лимонады</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./vendors/fonts.css">
 </head>
 
 <html class="html"> 
@@ -19,11 +20,10 @@
         </div>
       </div>
       <div class="header__container-two">
-        <div class="header__logo">
-          <div class="header__logo-in-logo"></div>
-        </div>
+        <div class="header__logo"></div>
+        <div class="header__logo-in-logo"></div>
         <h2 class="header__subtitle">Вкусные лимонады из&numsp;фруктов</h2>
-        <button type="button" class="header__button button">Подробнее</button>
+        <button type="button" class="button">Подробнее</button>
       </div>
     </header>
     <main class="main">
@@ -35,7 +35,7 @@
         <div class="content">
           <div class="content__taste">
             <div class="content__discription">
-              <h4 class="content__title">Вкусы</h4>
+              <h4 class="content__title" id="tastes">Вкусы</h4>
               <p class="content__text">Пейте фрукты, а не газировку со вкусовыми добавками, наши лимонады на 100%
                 натуральны!</p>
             </div>
@@ -43,13 +43,13 @@
           </div>
           <div class="content__components">
             <div class="content__discription">
-              <h4 class="content__title">Состав</h4>
+              <h4 class="content__title" id="ingridients">Состав</h4>
               <p class="content__text">Наши натуральные лимонады делаются из натуральных компонентов.</p>
-              <button type="button" class="content__button button">Попробовать</button>
-          </div>
+              
+            </div>
             <div class="content__bubbles">
-              <div class="content__bubble-one"></div>
-              <div class="content__bubble-two"></div>
+              <img src="./images/green-bubble.png" alt="" class="content__bubble-one">
+              <img src="./images/yellow-bubble.png" alt="" class="content__bubble-two">
             </div>
             <div class="content__ingridients">
               <p class="content__ingridient">Сок</p>
@@ -58,6 +58,7 @@
               <p class="content__ingridient">Пузыри</p>
               <p class="content__ingridient">Витамины</p>
             </div>
+            <button type="button" class="content__button button">Попробовать</button>
           </div>
         </div>
       </section>
@@ -73,7 +74,7 @@
           <p class="samples__text">Хотите получить семплы каждого вкуса, чтобы понять что нравится вам? Заполните форму!</p>
         </div>
         <div class="form">
-          <h4 class="form__title">Семплы</h4>
+          <h4 class="form__title" id="samples">Семплы</h4>
           <form class="forms">
             <div class="form__about">
               <label for="name" class="form__label">Имя *</label>
@@ -93,16 +94,16 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__image"></div>
+      <img class="footer__image" src="./images/SODA.png" alt="Логотип Сода">
       <div class="footer__content">
         <div class="footer__info">
           <div class="footer__content-menu">
             <h4 class="footer__title">Меню</h4>
-            <ul class="footer__points">
-              <li class="footer__point">Вкусы</li>
-              <li class="footer__point">Состав</li>
-              <li class="footer__point">Семплы</li>
-            </ul>
+            <div class="footer__points">
+              <a class="footer__point" href="#tastes">Вкусы</a>
+              <a class="footer__point" href="#ingridients">Состав</a>
+              <a class="footer__point" href="#samples">Семплы</a>
+            </div>
           </div>
           <div class="footer__content-contacts">
             <h4 class="footer__title">Контакты</h4>

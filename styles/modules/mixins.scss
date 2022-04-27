@@ -14,3 +14,19 @@
   font-style: normal;
   font-weight: 700;
 }
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+@mixin mobile-tablet {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}

@@ -1,76 +1,179 @@
 .content {
-  width: 1340px;
+  max-width: 1340px;
   margin: 0 auto;
   padding: 0 0 50px 0;
+
+  @include tablet {
+    padding: 0 50px 0;
+  }
+  @include mobile {
+    margin: 0 20px;
+    padding: 0;
+  }
 
   &__taste {
     background-color: $lilac;
     display: flex;
     justify-content: space-between;
+    padding: 90px 100px;
+
+    @include tablet {
+      padding: 60px;
+      flex-direction: column;
+    }
+
+    @include mobile {
+      padding: 20px;
+      flex-direction: column;
+    }
   }
 
-  &__discription {
-
-  }
   &__components {
     background-color: $purple;
     display: flex;
+    padding: 90px 100px;
+    max-height: 580px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    @include tablet {
+      padding: 60px;
+      max-height: 915px;
+      flex-direction: column;
+    }
+
+    @include mobile {
+      padding: 20px;
+      flex-direction: column
+    }
   }
 
   &__title {
+    @include fw600;
     margin: 0;
-    padding: 90px 0 0 100px;
     font-size: 52px;
     line-height: 0.92;
     color: #fff;
+
+    @include tablet {
+      margin: 0 0 30px 0;
+    }
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
   &__text {
     @include fw500;
-    margin: 30px 0 0 100px;
+    margin: 30px 0 0;
     padding: 0;
     color: #fff;
     max-width: 386px;
     font-size: 18px;
     line-height: 1.72;
+    letter-spacing: 0.3px;
+
+    @include tablet {
+      margin: 0;
+    }
+
+    @include mobile {
+      margin: 14px 0 0;
+      font-size: 14px;
+    }
   }
 
   &__image {
-    margin: 90px 100px 90px 0;
+    margin: 0;
     width: 518px;
     height: 345px;
     background: url(../../../images/strawberry.png) no-repeat center transparent;
+    background-size: contain;
+
+    @include tablet {
+      margin: 60px 0 0 0;
+    }
+
+    @include mobile {
+      margin: 50px auto 0;
+      width: 240px;
+      height: 160px;
+    }
   }
   &__button {
-    margin: 205px 0 90px 100px;
+    margin: 205px 0 0;
+
+    @include tablet {
+      margin: 100px 0 0;
+    }
+
+    @include mobile {
+      margin: 60px 0 0;
+    }
   }
   &__bubbles {
     display: flex;
     flex-direction: column;
-    margin: 123px 126px 121px 136px;
+    margin: 33px 126px 121px 136px;
+    align-self: flex-end;
+
+    @include tablet {
+      width: 185px;
+      margin: 0;
+      position: absolute;
+      top: 300px;
+      right: 60px;
+    }
+
+    @include mobile {
+      display: none;
+    }
   }
   &__bubble-one {
     width: 185px;
     height: 185px;
-    background: url(../../../images/green-bubble.png) no-repeat center transparent;
     margin: 0 0 13px 0;
+
+    @include tablet {
+      margin: 0 0 20px 0;
+    }
   }
   &__bubble-two {
     margin: 0 0 0 108px;
     width: 138px;
     height: 138px;
-    background: url(../../../images/yellow-bubble.png) no-repeat center;
+
+    @include tablet {
+      margin: 0;
+      align-self: flex-end;
+    }
   }
   &__ingridients {
-    margin: 90px 100px 60px 0;
+    margin: 0;
     width: 255px;
+
+    @include tablet {
+      margin: 100px 0 0;
+    }
+
+    @include mobile {
+      margin: 60px 0 0;
+    }
   }
   &__ingridient {
     @include fw700;
+    width: 240px;
     margin: 0 0 30px 0;
     padding: 0;
     font-size: 32px;
     line-height: 1.56;
     color: #fff;
-    border-bottom: solid 0.5px rgba($color: #fff, $alpha: 0.5)
+    border-bottom: solid 0.5px rgba($color: #fff, $alpha: 0.5);
+
+    @include mobile {
+      margin: 0 0 20px 0;
+      font-size: 22px;
+    }
   }
 }

@@ -18,6 +18,10 @@
     text-transform: uppercase;
     animation: marquee 16s infinite linear;
 
+    @include mobile {
+      font-size: 20px;
+    }
+
     &::after{
       content: "Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh";
     }

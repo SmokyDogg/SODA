@@ -9,5 +9,10 @@
     line-height: 1;
     color: $blue;
     text-align: center;
+
+    @include mobile {
+      margin: 50px 0;
+      font-size: 20px;
+    }
   }
 }

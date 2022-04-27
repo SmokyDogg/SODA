@@ -1,20 +1,36 @@
 .header {
   margin: 0;
-  padding: 0;
+  padding: 40px 50px 50px;
   background-color: $lilac;
   position: relative;
   overflow: hidden;
-  min-height: 760px;
+  max-height: 760px;
   display: flex;
   box-sizing: border-box;
+
+  @include tablet {
+    flex-direction: column
+  }
+
+  @include mobile {
+    padding: 20px;
+    flex-direction: column;
+    max-height: 515px
+  }
 
   &__title {
     @include fw700;
     margin: 0;
-    padding: 40px 0 0 50px;
+    padding: 0;
     font-size: 30px;
     line-height: 1;
     color: $yellow;
+    width: 87px;
+
+    @include mobile {
+      margin: 0 0 50px 0;
+      font-size: 20px;
+    }
   }
   &__logo {
     position: absolute;
@@ -24,7 +40,13 @@
     height: 405px;
     background: url(../../../images/Bg-C.png) no-repeat center;
     z-index: 0;
+    opacity: 1;
+
+    @include mobile-tablet {
+      opacity: 0;
+    }
   }
+  
   &__logo-in-logo {
     position: absolute;
     right: 50px;
@@ -32,6 +54,19 @@
     width: 169px;
     height: 169px;
     background: url(../../../images/logo.png) no-repeat center;
+    background-size: contain;
+    
+    @include tablet {
+      width: 128px;
+      height: 128px;
+    }
+
+    @include mobile {
+      width: 94px;
+      height: 94px;
+      right: 20px;
+      top: 20px;
+    }
   }
   &__container-one {
     display: flex;
@@ -41,30 +76,76 @@
     margin: 0 0 0 100px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
+    @include tablet {
+      margin: 50px 0 0;
+      flex-direction: row;
+    }
+
+    @include mobile {
+      margin: 50px 0 0;
+    }
   }
   &__image {
     position: relative;
-    margin: 40px 0 0 50px;
+    margin: 40px 0 0;
     width: 783px;
     height: 600px;
     background: url(../../../images/jarritos.png) no-repeat center;
+    background-size: contain;
+
+    @include tablet {
+      margin: 126px 0 0;
+      width: 668px;
+      height: 514px;
+    }
+
+    @include mobile {
+      margin: 0;
+      width: 280px;
+      height: 216px;
+    }
   }
   &__pineapple {
     position: absolute;
     bottom: -36px;
     right: -52px;
-    width: 129px;
-    height: 124px;
+    width: 149px;
+    height: 146px;
     background: url(../../../images/ananas.png) no-repeat center;
     background-size: contain;
+
+    @include tablet {
+      right: 20px;
+      bottom: 20px;
+    }
+
+    @include mobile {
+      width: 83px;
+      height: 80px;
+      right: 5px;
+      bottom: -34px;
+    }
   }
   &__subtitle {
+    @include fw600;
     width: 457px;
     margin: 388px 0 171px 0;
-    @include fw600;
     color: #fff;
     font-size: 40px;
     line-height: 1.2;
     z-index: 1;
+
+    @include tablet {
+      font-size: 30px;
+      margin: 0;
+    }
+
+    @include mobile {
+      width: 280px;
+      margin: 0 0 30px 0;
+      font-size: 20px;
+    }
   }
 }

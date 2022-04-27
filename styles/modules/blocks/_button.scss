@@ -1,10 +1,12 @@
 .button {
+  padding: 0;
   @include fw500;
   background-color: $yellow;
   width: 163px;
   height: 55px;
   font-size: 18px;
   line-height: 1.7;
+  letter-spacing: 0.3px;
   border: none;
   color: $blue;
   transition: all ease 0.05s;
