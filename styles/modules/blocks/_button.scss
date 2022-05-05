@@ -1,6 +1,10 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   @include fw500;
+  text-decoration: none;
   background-color: $yellow;
   width: 163px;
   height: 55px;

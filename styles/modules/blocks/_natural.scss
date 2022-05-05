@@ -1,16 +1,18 @@
 .natural {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin: 20px auto;
+  margin: 0;
+  padding: 20px 180px 0 154px;
 
   @include tablet {
     margin: 0;
+    padding: 0;
     flex-direction: column;
   }
 
   @include mobile {
     margin: 0;
+    padding: 0;
     flex-direction: column;
   }
 
@@ -25,6 +27,7 @@
     padding: 0;
 
     @include tablet {
+      text-align: center;
       margin: 120px 0 120px;
     }
 
@@ -42,11 +45,16 @@
     height: 510px;
     background: url(../../../images/jaritos-mango.png) no-repeat;
     z-index: 1;
-    margin: 0 auto;
+    margin: 0 0 0 216px;
     
+    @include tablet {
+      margin: 0 auto;
+    }
+
     @include mobile {
       width: 280px;
       height: 339px;
+      margin: 0 auto;
       background-size: cover;
     }
   }

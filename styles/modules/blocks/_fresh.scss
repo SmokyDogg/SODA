@@ -1,6 +1,6 @@
 .fresh {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   background-color: $lime;
   display: flex;
   align-items: center;
@@ -8,7 +8,7 @@
 
   &__text {
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
     @include fw700;
     color: $green;
     font-size: 30px;
