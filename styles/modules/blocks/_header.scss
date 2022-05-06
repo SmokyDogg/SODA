@@ -8,13 +8,15 @@
 
   @include tablet {
     max-height: 886px;
-    flex-direction: column
   }
 
   @include mobile {
     padding: 20px;
-    flex-direction: column;
     max-height: 515px
+  }
+
+  @include mobile-tablet {
+    flex-direction: column;
   }
 
   &__title {
@@ -27,8 +29,9 @@
     width: 87px;
 
     @include mobile {
-      margin: 0 0 50px 0;
+      margin: 0;
       font-size: 20px;
+      line-height: 1.5;
     }
   }
   &__logo {
@@ -101,7 +104,7 @@
     }
 
     @include mobile {
-      margin: 0;
+      margin: 50px 0 0;
       width: 280px;
       height: 216px;
     }
@@ -113,7 +116,7 @@
     width: 149px;
     height: 146px;
     background: url(../../../images/ananas.png) no-repeat center;
-    background-size: contain;
+    background-size: cover;
 
     @include tablet {
       right: 20px;
@@ -121,8 +124,8 @@
     }
 
     @include mobile {
-      width: 83px;
-      height: 80px;
+      width: 96px;
+      height: 93px;
       right: 5px;
       bottom: -34px;
     }
@@ -130,7 +133,7 @@
   &__subtitle {
     @include fw600;
     width: 457px;
-    margin: 338px 0 0;
+    margin: 348px 0 0;
     color: #fff;
     font-size: 40px;
     line-height: 1.2;
@@ -150,6 +153,12 @@
   &__button {
     width: 163px;
     min-height: 55px;
-    box-sizing: border-box
+    box-sizing: border-box;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 1.9;
+      width: 152px;
+    }
   }
 }

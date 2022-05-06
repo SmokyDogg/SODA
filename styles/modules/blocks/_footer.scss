@@ -25,16 +25,16 @@
     box-sizing: border-box;
 
     @include tablet {
-      width: 200px;
-      height: 200px;
       margin: 0 100px 0 0;
-      box-sizing: border-box;
     }
 
     @include mobile {
+      margin: 0 auto;
+    }
+
+    @include mobile-tablet {
       width: 200px;
       height: 200px;
-      margin: 0 auto;
     }
   }
 

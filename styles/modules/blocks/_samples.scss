@@ -2,7 +2,7 @@
   background-color: $lime;
   width: 100%;
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 60px 50px 60px 150px;
   box-sizing: border-box;
   justify-content: space-between;
@@ -10,27 +10,27 @@
   @include tablet {
     margin: 0 auto;
     width: 668px;
-    flex-direction: column;
     padding: 60px 34px 34px;
   }
 
   @include mobile {
     width: 280px;
-    flex-direction: column;
     margin: 0 20px;
     padding: 20px 10px 10px;
   }
 
-  &__textual {
-    align-self: center;
+  @include mobile-tablet {
+    flex-direction: column;
+  }
 
-    @include mobile-tablet {
-      align-self: flex-start
-    }
+  &__textual {
 
     @include mobile {
-      align-self: flex-start;
       margin: 0 auto;
+    }
+
+    @include mobile-tablet {
+      align-self: flex-start;
     }
   }
 
@@ -39,7 +39,7 @@
     font-size: 60px;
     line-height: 1.08;
     color: $blue;
-    margin: 0 0 48px;
+    margin: 149px 0 48px;
     width: 244px;
 
     @include tablet {

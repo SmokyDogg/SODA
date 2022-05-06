@@ -32,7 +32,7 @@
   &__about {
     width: 310px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 0 13px 12px 0;
 
     @include tablet {
@@ -43,6 +43,8 @@
       margin: 0 0 8px;
       width: 220px;
     }
+
+    
   }
 
   &__label {
@@ -51,7 +53,8 @@
     font-size: 18px;
     line-height: 1.72;
     margin: 0 0 12px 0;
-
+    opacity: 1;
+    
     @include mobile {
       margin: 0;
     }
@@ -72,11 +75,15 @@
     @include mobile {
       line-height: 2.2;
     }
+    
+    &:focus ~ .form__label {
+      opacity: 0.5;
+    }
   }
 
   &__email {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 633px;
 
     @include tablet {

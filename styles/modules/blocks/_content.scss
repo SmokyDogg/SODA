@@ -11,48 +11,52 @@
     padding: 0;
   }
 
-  &__taste {
-    background-color: $lilac;
-    display: flex;
-    justify-content: space-between;
-    padding: 90px 100px;
+  
 
-    @include tablet {
-      padding: 60px;
-      flex-direction: column;
-    }
-
-    @include mobile {
-      padding: 20px;
-      flex-direction: column;
-    }
-  }
-
-  &__components {
-    background-color: $purple;
+  &__container {
     display: flex;
     padding: 90px 100px;
-    max-height: 580px;
     box-sizing: border-box;
-    overflow: hidden;
-    flex-wrap: wrap;
 
     @include tablet {
       padding: 60px;
-      max-height: 915px;
-      flex-direction: column;
-      position: relative;
-      flex-wrap: nowrap;
+    }
+    @include mobile {
+      padding: 20px;
     }
 
-    @include mobile {
-      min-height: 605px;
-      padding: 20px;
+    @include mobile-tablet {
       flex-direction: column;
-      position: relative;
-      flex-wrap: nowrap
     }
+    
+    &_components {
+        background-color: $purple;
+        max-height: 580px;
+        overflow: hidden;
+        flex-wrap: wrap;
+
+        @include tablet {
+          max-height: 915px;
+        }
+
+        @include mobile {
+          min-height: 605px;
+        }
+
+        @include mobile-tablet {
+          position: relative;
+          flex-wrap: nowrap
+        }
+      }
+
+    &_taste {
+      background-color: $lilac;
+      justify-content: space-between;
+    }
+
   }
+
+  
 
   &__title {
     @include fw600;
@@ -94,7 +98,7 @@
 
   &__image {
     margin: 0;
-    width: 518px;
+    width: 548px;
     height: 345px;
     background: url(../../../images/strawberry.png) no-repeat center transparent;
     background-size: contain;
@@ -173,7 +177,7 @@
     @include fw700;
     width: 240px;
     margin: 0 0 30px 0;
-    padding: 0;
+    padding: 0 0 4px 0;
     font-size: 32px;
     line-height: 1.56;
     color: #fff;
