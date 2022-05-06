@@ -1,0 +1,77 @@
+.natural {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 20px 180px 0 154px;
+
+  @include mobile-tablet {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include fw500;
+    color: $blue;
+    font-size: 60px;
+    line-height: 1.11;
+    width: 460px;
+    margin: 120px 0 0;
+    padding: 0;
+
+    @include tablet {
+      margin: 120px auto 120px;
+    }
+
+    @include mobile {
+      margin: 50px auto;
+      font-size: 20px;
+      width: 280px;
+    }
+
+    @include mobile-tablet {
+      text-align: center;
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 430px;
+    height: 510px;
+    background: url(../../../images/jaritos-mango.png) no-repeat;
+    z-index: 1;
+    margin: 0 0 0 216px;
+    
+
+    @include mobile {
+      width: 280px;
+      height: 339px;
+      background-size: cover;
+    }
+
+    @include mobile-tablet {
+      margin: 0 auto;
+    }
+  }
+
+  &__mango {
+    position: absolute;
+    top: 51px;
+    left: -105px;
+    width: 172px;
+    height: 172px;
+    background: url(../../../images/mango.svg) no-repeat center;
+    background-size: auto;
+    overflow: hidden;
+    z-index: 0;
+
+    @include mobile {
+      width: 126px;
+      height: 126px;
+      left: -6px;
+      top: 176px;
+      box-sizing: border-box;
+      background-size: contain;
+    }
+  }
+}

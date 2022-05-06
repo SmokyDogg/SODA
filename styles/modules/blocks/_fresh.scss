@@ -1,0 +1,38 @@
+.fresh {
+  margin: 0;
+  padding: 20px;
+  background-color: $lime;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    @include fw700;
+    color: $green;
+    font-size: 30px;
+    line-height: 1.2;
+    text-overflow: clip;
+    white-space: nowrap;
+    text-transform: uppercase;
+    animation: marquee 16s infinite linear;
+
+    @include mobile {
+      font-size: 20px;
+    }
+
+    &::after{
+      content: "Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh";
+    }
+  }
+}
+
+@keyframes marquee{
+  0% {
+      transform: translateX(-100%)
+  }
+  100% {
+      transform: translateX(50%)
+  }
+}

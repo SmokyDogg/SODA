@@ -1,0 +1,74 @@
+.samples {
+  background-color: $lime;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 60px 50px 60px 150px;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  @include tablet {
+    margin: 0 auto;
+    width: 668px;
+    padding: 60px 34px 34px;
+  }
+
+  @include mobile {
+    width: 280px;
+    margin: 0 20px;
+    padding: 20px 10px 10px;
+  }
+
+  @include mobile-tablet {
+    flex-direction: column;
+  }
+
+  &__textual {
+
+    @include mobile {
+      margin: 0 auto;
+    }
+
+    @include mobile-tablet {
+      align-self: flex-start;
+    }
+  }
+
+  &__title {
+    @include fw500;
+    font-size: 60px;
+    line-height: 1.08;
+    color: $blue;
+    margin: 149px 0 48px;
+    width: 244px;
+
+    @include tablet {
+      margin: 0 0 48px 26px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__text {
+    @include fw400;
+    font-size: 20px;
+    line-height: 1.45;
+    color: $blue;
+    margin: 0;
+    width: 457px;
+
+    @include tablet {
+      margin: 0 0 100px 26px;
+    }
+
+    @include mobile {
+      width: 240px;
+      font-size: 14px;
+      line-height: 1.35;
+      margin: 0 0 50px 0;
+    }
+  }
+}
