@@ -55,7 +55,7 @@
     top: 50px;
     width: 169px;
     height: 169px;
-    background: url(../../../images/logo.png) no-repeat center;
+    background: url(../../../images/logo.svg) no-repeat center;
     background-size: contain;
     
     @include tablet {
@@ -115,7 +115,7 @@
     right: -52px;
     width: 149px;
     height: 146px;
-    background: url(../../../images/ananas.png) no-repeat center;
+    background: url(../../../images/pineapple.svg) no-repeat center;
     background-size: cover;
 
     @include tablet {

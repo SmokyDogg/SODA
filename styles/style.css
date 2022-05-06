@@ -127,7 +127,7 @@
   top: 50px;
   width: 169px;
   height: 169px;
-  background: url(../../../images/logo.png) no-repeat center;
+  background: url(../../../images/logo.svg) no-repeat center;
   background-size: contain;
 }
 
@@ -218,7 +218,7 @@
   right: -52px;
   width: 149px;
   height: 146px;
-  background: url(../../../images/ananas.png) no-repeat center;
+  background: url(../../../images/pineapple.svg) no-repeat center;
   background-size: cover;
 }
 
@@ -700,7 +700,7 @@
   left: -105px;
   width: 172px;
   height: 172px;
-  background: url(../../../images/mango.png) no-repeat center;
+  background: url(../../../images/mango.svg) no-repeat center;
   background-size: auto;
   overflow: hidden;
   z-index: 0;
