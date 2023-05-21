@@ -40,8 +40,8 @@
   letter-spacing: 0.3px;
   border: none;
   color: #1E3264;
-  -webkit-transition: all ease 0.05s;
-  transition: all ease 0.05s;
+  -webkit-transition: all ease-out 0.05s;
+  transition: all ease-out 0.05s;
 }
 
 .button:hover {
@@ -110,7 +110,7 @@
   top: 0;
   width: 405px;
   height: 405px;
-  background: url(../../../images/Bg-C.png) no-repeat center;
+  background: url(../../images/Bg-C.png) no-repeat center;
   z-index: 0;
   opacity: 1;
 }
@@ -127,7 +127,7 @@
   top: 50px;
   width: 169px;
   height: 169px;
-  background: url(../../../images/logo.svg) no-repeat center;
+  background: url(../images/logo.svg) no-repeat center;
   background-size: contain;
 }
 
@@ -192,7 +192,7 @@
   margin: 40px 0 0;
   width: 783px;
   height: 600px;
-  background: url(../../../images/jarritos.png) no-repeat center;
+  background: url(../images/jarritos.png) no-repeat center;
   background-size: contain;
 }
 
@@ -218,7 +218,7 @@
   right: -52px;
   width: 149px;
   height: 146px;
-  background: url(../../../images/pineapple.svg) no-repeat center;
+  background: url(../images/pineapple.svg) no-repeat center;
   background-size: cover;
 }
 
@@ -493,7 +493,7 @@
   margin: 0;
   width: 548px;
   height: 345px;
-  background: url(../../../images/strawberry.png) no-repeat center transparent;
+  background: url(../images/strawberry.png) no-repeat center transparent;
   background-size: contain;
 }
 
@@ -675,7 +675,7 @@
   position: relative;
   width: 430px;
   height: 510px;
-  background: url(../../../images/jaritos-mango.png) no-repeat;
+  background: url(../images/jaritos-mango.png) no-repeat;
   z-index: 1;
   margin: 0 0 0 216px;
 }
@@ -700,7 +700,7 @@
   left: -105px;
   width: 172px;
   height: 172px;
-  background: url(../../../images/mango.svg) no-repeat center;
+  background: url(../images/mango.svg) no-repeat center;
   background-size: auto;
   overflow: hidden;
   z-index: 0;

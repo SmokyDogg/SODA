@@ -13,7 +13,7 @@
   letter-spacing: 0.3px;
   border: none;
   color: $blue;
-  transition: all ease 0.05s;
+  transition: all ease-out 0.05s;
 
   &:hover {
     border: 2px solid #1e3264;
